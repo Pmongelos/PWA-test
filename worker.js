@@ -13,8 +13,16 @@ self.addEventListener('install', (e) => {
 });
 
 // Estrategia: Cache First (Servir desde caché si existe)
-self.addEventListener('fetch', (e) => {
-    e.respondWith(
-        caches.match(e.request).then(response => response || fetch(e.request))
+
+self.addEventListener('fetch', (event) => {
+    event.respondWith(
+        caches.match(event.request).then((response) => {
+            // Devuelve el recurso de la caché o lo busca en internet
+            return response || fetch(event.request);
+        }).catch(() => {
+            // Opcional: Si falla todo (estás offline y no hay caché), 
+            // podrías devolver una página offline.html aquí
+        })
     );
 });
+
