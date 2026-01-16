@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes PWA</title>
+    <link rel="manifest" href="data:application/manifest+json,{'name':'Mensajes PWA','short_name':'Msjs','start_url':'.','display':'standalone','background_color':'#ffffff','theme_color':'#6200ee'}" />
+    <style>
+        body { font-family: sans-serif; max-width: 500px; margin: 20px auto; padding: 0 15px; background: #f4f4f9; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        input { width: 70%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 10px 15px; background: #6200ee; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        ul { list-style: none; padding: 0; margin-top: 20px; }
+        li { background: white; margin-bottom: 10px; padding: 10px; border-radius: 4px; border-left: 5px solid #6200ee; }
+        small { color: #666; display: block; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Mis Mensajes</h2>
+        <input type="text" id="msgInput" placeholder="Escribe algo...">
+        <button onclick="saveMessage()">Guardar</button>
+    </div>
+    <ul id="msgList"></ul>
+
+    <script src="main.js"></script>
+</body>
+</html>
