@@ -1,5 +1,8 @@
-[{ name: "Urutengangana", img: "img/urutengangana.jpg", description: "Dios de la luz. El primogénito de los dioses.", lat: -41.1680009, lon: 174.0608852 },
+{ "stations" : [
+{ name: "Urutengangana", img: "img/urutengangana.jpg", description: "Dios de la luz. El primogénito de los dioses.", lat: -41.1680009, lon: 174.0608852 },
            { name: "Tumatauenga", img: "img/tumatauenga.jpg", description: "Dios de la guerra y la caza.", lat: -39.3524332, lon: 174.2214992},
            { name: "Rūaumoko", img: "img/ruaumoko.jpg", description: "Dios de los terremotos y volcanes.", lat: -42.1119642, lon: 172.6010590},
            { name: "Pekapeka", img: "img/pekapekamaori.jpg", description: "Murciélago nativo maorí.", lat: -37.0661338, lon: 174.8635439 },
-           { name: "Rongo", img: "img/rongo.jpg", description: "Dios de la paz y la agricultura.", lat: -42.9150553, lon: 171.9547704}]
+           { name: "Rongo", img: "img/rongo.jpg", description: "Dios de la paz y la agricultura.", lat: -42.9150553, lon: 171.9547704}
+]
+}
