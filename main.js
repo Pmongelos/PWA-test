@@ -43,7 +43,9 @@ function displayMessages() {
         const cursor = e.target.result;
         if (cursor) {
             list.innerHTML += `<li>${cursor.value.texto} <small>${cursor.value.fecha}</small></li>`;
+            if (cursor.value.texto.includes("img")) { list.innerHTML += `<img src="${cursor.value.texto}" alt="Image">`; }
             cursor.continue();
+            
         }
     };
 }

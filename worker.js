@@ -2,7 +2,8 @@ const CACHE_NAME = 'pwa-v1';
 const ASSETS = [
     './',
     './index.html',
-    './main.js'
+    './main.js',
+    './img/tane.jpg'
 ];
 
 // Instalación: Guardar archivos estáticos
