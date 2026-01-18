@@ -4,7 +4,8 @@ const ASSETS = [
     './index.html',
     './main.js',
     './offline.html',
-    './img/tane.jpg'
+    './img/tane.jpg',
+    './img/koru.jpg'
 ];
 
 // Instalación: Guardar archivos estáticos
